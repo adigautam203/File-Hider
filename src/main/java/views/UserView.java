@@ -1,6 +1,7 @@
 package views;
 
 import dao.DataDAO;
+import db.MyConnection;
 import model.Data;
 
 import java.io.File;
@@ -79,7 +80,10 @@ public class UserView {
                     }
                 }
                 case  0 ->{
-                    System.out.println("Exit");
+//
+                   Welcome w = new Welcome();
+                   w.welcomeScreen();
+
                 }
             }
         }while (true);

@@ -13,7 +13,7 @@ public class MyConnection {
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }
-//        System.out.println("hogaya");
+
         return  connection;
 
     }
@@ -22,7 +22,7 @@ public class MyConnection {
             try {
                 connection.close();
             }catch (SQLException ex){
-                ex.printStackTrace();
+                System.out.print("error");
             }
         }
     }
